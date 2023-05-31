@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0drspSVOInUWxyP_w0vVTID8oBJHyYOs&libraries=geometry&callback=initMap" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div id="main-containter">
+      <div id="map"></div>
+      <div id="info-container">
+        <label for="number-imgs">Number of Images:</label>
+        <input type="text" id="number-imgs" name="number-imgs">
+        <p id="start-lat-lng">Start: </p>
+        <p id="end-lat-lng">End: </p>
+      </div>
+    </div>
+    <div id="street-view-container"></div>
+  </body>
+</html>
